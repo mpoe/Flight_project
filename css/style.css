@@ -10,6 +10,9 @@
   font-size: 16px;
   overflow: hidden; }
 
+@font-face {
+  font-family: FeatherScript;
+  src: url(../FeatherScript.otf); }
 a {
   text-decoration: none;
   color: black; }
@@ -25,10 +28,11 @@ h1 {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden; }
+  overflow: hidden;
+  background: url(../bgPlain.jpg);
+  background-size: cover; }
 
 header {
-  background: black;
   height: 5em;
   width: 100%;
   display: flex;
@@ -58,6 +62,12 @@ nav a {
   font-size: 20px;
   color: white; }
 
+#navitems {
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
 #login-Lang {
   display: flex;
   flex: 1;
@@ -79,14 +89,28 @@ nav a {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: url(../bg.jpg);
-  background-size: cover; }
+  flex-direction: column; }
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; }
+  width: 50%;
+  margin: 1em; }
+
+#calltoaction {
+  color: white;
+  text-align: center;
+  margin-bottom: 3em;
+  font-family: FeatherScript; }
+
+#fpSelect {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 #fpSec1 a {
   color: white; }
@@ -98,23 +122,25 @@ section {
   font-size: 3em; }
 
 #box1Front {
-  height: 30em;
   width: 30em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: orange; }
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em 2em;
+  border: 1px solid; }
 
 #box1Front:hover {
   background: #C2531B; }
 
 #box2Front {
-  height: 30em;
   width: 30em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: deepPink; }
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em 2em;
+  border: 1px solid; }
 
 #box2Front:hover {
   background: #b607ff; }
@@ -512,9 +538,6 @@ ul#list li {
   h1 {
     font-size: 1.5em; }
 
-  #container {
-    flex-direction: column; }
-
   /*nav menu */
   a.toggleNav {
     display: flex;
@@ -599,9 +622,6 @@ ul#list li {
     display: none; }
 
   /*end nav menu */
-  #container {
-    flex-direction: column; }
-
   #box1Front {
     height: 10em;
     width: 30em;

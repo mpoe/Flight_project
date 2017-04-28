@@ -11,9 +11,6 @@
   display: flex;
   flex-direction:column;
 }
-
-
-
 /*end mixin*/
 
 $deepPink: deepPink;
@@ -36,6 +33,11 @@ $font16:16px; /*base font size*/
   overflow: hidden;
 }
 
+@font-face {
+  font-family: FeatherScript;
+  src: url(../FeatherScript.otf);
+}
+
 a{
   text-decoration: none;
   color: black;
@@ -54,10 +56,11 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  background: url(../bgPlain.jpg);
+  background-size: cover;
  }
 
 header {
-  background: black;
   height: 5em;
   width: 100%;
   display: flex;
@@ -93,6 +96,13 @@ nav a {
   color: $whiteText;
 }
 
+#navitems {
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 #login-Lang {
   display: flex;
   flex:1;
@@ -115,13 +125,29 @@ nav a {
   @include center-children;
   width: 100%;
   height: 100vh;
-  background: url(../bg.jpg);
-  background-size: cover;
+  flex-direction: column;
 }
 
 section {
   @include center-children;
   width: 50%;
+  margin: 1em;
+}
+
+#calltoaction {
+  color: $whiteText;
+  text-align: center;
+  margin-bottom:3em;
+  font-family: FeatherScript;
+}
+
+#fpSelect {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #fpSec1 a {
@@ -137,10 +163,11 @@ section {
 }
 
 #box1Front {
-  height: 30em;
   width: 30em;
   @include center-children;
-  background: $orange;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em 2em;
+  border: 1px solid;
 }
 
 #box1Front:hover {
@@ -148,10 +175,11 @@ section {
 }
 
 #box2Front {
-  height: 30em;
   width: 30em;
   @include center-children;
-  background: $deepPink;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em 2em;
+  border: 1px solid;
 }
 
 #box2Front:hover {
@@ -608,9 +636,6 @@ ul#list li {
     font-size: 1.5em;
   }
 
-  #container {
-    flex-direction: column;
-  }
 
   /*nav menu */
   a.toggleNav {
@@ -713,10 +738,6 @@ ul#list li {
   }
   /*end nav menu */
 
-
-  #container {
-    flex-direction: column;
-  }
 
   #box1Front {
     height: 10em;
