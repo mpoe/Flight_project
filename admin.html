@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bird</title>
+</head>
+<body>
+
+<wrapper class="wrapper">
+    <header>
+        <a href="index.html" id="logo">
+            <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+        </a>
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div id="navitems">
+                <ul>
+                    <a href="findFlight.html">Flights</a>
+                    <a href="#">Hotel</a>
+                    <a href="#">Car Rental</a>
+
+                    <a id="faGlobe" href="#">Language</a>
+                    <a href="login.html">Login</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container" class="admin">
+        <div class="adminPanel">
+            <div id="adminNav">
+                <a href="previousJourney.html" id="adminPrevJourney">Previous Journey</a>
+                <a href="findFlight.html" id="adminNewFlight">New flight</a>
+            </div>
+            <h1>My Preferences</h1>
+            <ul id="list">
+                <li><a href="#">Edit my details</a></li>
+                <li><a href="#">Find a seat</a></li>
+                <li><a href="#">Pre-Purchase a meal</a></li>
+                <li><a href="#">Purchase extra bags</a></li>
+                <li><a href="#">View your itinerary</a></li>
+                <li><a href="#">Enter APIS infomation</a></li>
+            </ul>
+        </div>
+
+    </div>
+</wrapper>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+    $(function() {
+        $('.toggleNav').on('click', function () {
+            $('nav ul').toggleClass('open'); /*only when its enabled will this class apply - enabled = clicked*/
+        })
+    });
+
+</script>
+
+</body>
+</html>

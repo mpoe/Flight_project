@@ -1,0 +1,648 @@
+/*SASS */
+/*SASS mixin'*/
+/*end mixin*/
+/*base font size*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  overflow: hidden; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+
+h1 {
+  font-size: 3em; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; }
+
+header {
+  background: white;
+  height: 5em;
+  width: 100%;
+  display: flex;
+  z-index: 999; }
+
+#logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: -2em;
+  flex: 1;
+  margin-right: 2em;
+  justify-content: flex-start; }
+
+#logo img {
+    width: 20em;
+    padding-left: 1em;
+}
+
+a.toggleNav {
+  display: none; }
+
+nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end; }
+
+nav a {
+  margin: 1em;
+  font-size: 20px;
+  color: #EB282B }
+
+nav a:hover{
+  background: white;
+  color:#ef9a9a;
+}
+
+#login-Lang {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end; }
+
+#login-Lang a {
+  color: white;
+  margin: .5em;
+  font-size: 20px; }
+
+#faGlobe:before {
+  content: "\F0AC";
+  font-family: FontAwesome;
+  padding: 0.3em; }
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../7clouds.jpg);
+  background-size: cover; }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; }
+
+#fpSec1 a {
+  color: white; }
+
+#fpSec2 a {
+  color: white; }
+
+.Box p {
+  font-size: 3em; }
+
+#box1Front {
+  height: 30em;
+  width: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EB282B; }
+
+#box1Front:hover {
+  background: white;
+  color:#ef9a9a; }
+
+#box2Front {
+  height: 30em;
+  width: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #0d47a1; }
+
+#box2Front:hover {
+  background: white; 
+  color: #9fa8da; }
+
+/*-----------------------   findFlights page --------------------------------------*/
+#flightFinder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #1a237e;
+  padding: 10px; }
+
+  #finf{
+    color: white;
+  }
+
+.flex-form * {
+  display: flex !important;
+  align-items: center;
+  border: 0;
+  padding: 10px;
+  background: #fff;
+  font-size: 16px;
+  margin: 0;
+  height: 5em; }
+
+form.flex-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center; }
+
+.flex-form *:last-child {
+  border-right: 0; }
+
+#linkAroundSubmit {
+  background: none;
+  padding: 0; }
+
+#submit {
+  background: #EB282B;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 100px 100px 0;
+  width: 80px;
+  min-height: 5em; }
+
+#submit:hover {
+  background: #ef9a9a;
+  color: white; }
+
+input[type="swap"]:before {
+  content: "\F0EC";
+  font-family: FontAwesome; }
+
+.checkbox {
+  display: flex;
+  color: #EB282B;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+/* Smartphone and small tablets for flight booking form. */
+@media only screen and (max-width: 840px) {
+  #flightFinder {
+    width: 80%; }
+
+  form.flex-form {
+    flex-wrap: nowrap; }
+
+  i.fa.fa-exchange {
+    display: flex !important;
+    width: 100%;
+    justify-content: center; }
+
+  form.flex-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+
+  input#from, input#to {
+    height: 5em;
+    margin: 1em;
+    width: 100%; }
+
+  .dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    width: 100%; }
+
+  input#date1, input#date2 {
+    font-size: 1em;
+    padding-left: 0; }
+
+  input#date2 {
+    padding-bottom: 1em; }
+
+  select {
+    height: 5em;
+    margin: 1em;
+    font-size: 40px;
+    width: 100%; }
+
+  #linkAroundSubmit {
+    width: 100%;
+    padding: 0; }
+
+  #submit {
+    width: 100%;
+    height: 4em;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 2em; }
+
+  form.checkbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 20em;
+    color: #000;
+    width: 100%;
+    margin-left: 1em; }
+
+  input[type='radio'] {
+    transform: scale(3);
+    margin-right: 2em; } }
+/* ------------------ end flightsFinder page------------------------*/
+/*----------------------- Previous Journey page ---------------------*/
+#previousJourneys {
+  height: 70%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: whitesmoke;
+  padding: 2em; }
+
+#previousJourneys h1 {
+  border-bottom: 1px solid black;
+  padding: 10px; }
+
+.journey {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid #000; }
+
+.journey .flight-icon {
+  font-size: 50px;
+  padding: 0 20px;
+  text-align: center; }
+
+.journey div {
+  font-size: 14px; }
+
+.departure, .arrival {
+  text-align: center;
+  margin: 0 10px;
+  width: 100px; }
+
+.pink, .yellow, .button.return {
+  height: 5em;
+  width: 10em;
+  padding: 13px;
+  text-align: center;
+  margin: 0 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pink {
+  padding: 24px;
+  background-color: #1a237e;
+  color: #fff; }
+
+.pink:hover {
+  background: #5c6bc0; }
+
+.yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9e9e9e;
+  color: white;
+  padding: 15px 10px !important; 
+  margin-left: 3em;}
+
+.yellow:hover {
+  background: #c5c5c5; }
+
+.journey div {
+  page-break-after: always;
+  /* CSS 2.1 syntax */
+  break-after: always;
+  /* New syntax */ }
+
+/*Media query 1255*/
+@media screen and (max-width: 795px) {
+  #previousJourneys {
+    width: 95%; }
+
+  /* ------- */
+  .arrival {
+    margin-bottom: 10px; }
+
+  .journey .button.yellow,
+  .journey .button.pink {
+    min-width: 94% !important;
+    margin-bottom: 5px;
+    padding: 22px 10px !important; } }
+@media screen and (max-width: 835px) {
+  .button {
+    width: 6em; } }
+@media screen and (max-width: 1135px) {
+  .button.yellow {
+    padding: 15px 10px !important; } }
+@media screen and (max-width: 1260px) {
+  .journey {
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .journey div {
+    min-width: 28%; }
+
+  .button.yellow {
+    padding: 22px 10px; }
+
+  .button {
+    width: 8em; }
+
+  .journey .flight-icon {
+    margin: 0 10px; } }
+/*end previous journey page */
+/* ---------------- Payment page ------------------------- */
+#payment {
+  height: 70%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: whitesmoke;
+  padding: 2em; }
+
+h2 {
+    color: #1a237e;
+    padding-bottom: 1em; }
+
+#pay{
+  color: #757575;
+  margin-bottom: 1em; }  
+
+#payment input {
+  width: 100%; }
+
+#payment-submit {
+  width: 100%;
+  margin: 1em 0 0 0; }
+
+#payment .information {
+  display: flex;
+  flex-grow: 1; }
+
+#payment .information label {
+  display: block; }
+
+#payment .information input {
+  margin: 0.5em; }
+
+.credit-card-information {
+  margin-right: 10px; }
+
+.personal-information {
+  margin-right: 100px; }
+
+.personal-information, .credit-card-information {
+  width: 50%; }
+
+input#payment-submit {
+  background: #1a237e;
+  color: white; }
+
+#payment-submit:hover {
+  background: #5c6bc0; }
+
+/*-------------------------------------------------------------------------*/
+/* login page*/
+
+#loginForm {
+    background: whitesmoke;
+    padding: 1em;
+    color: #757575; }
+
+.log-form {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  text-align: center; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+input {
+  padding: 1em;
+  margin: 1em;
+  border: 0; }
+
+button.btn {
+  padding: 1em;
+  margin: 1em;
+  border: 0;
+  font-size: 18px;
+  background: #1a237e;
+  color: white; }
+
+button.btn:hover {
+  background: #5c6bc0;
+  color: white;
+  cursor: pointer; }
+
+/*admin page */
+.admin {
+  display: flex;
+  flex-direction: column; }
+
+.adminPanel {
+    width: 50%;
+    background: whitesmoke;
+    padding: 1em;
+    color: #757575;}
+
+#adminNav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid;
+  padding-bottom: 1em; }
+
+#adminNav a {
+  padding: 1em 2em; }
+
+a#adminPrevJourney {
+  background: #1a237e;
+  color: white;
+  font-size: 18px; }
+
+a#adminPrevJourney:hover {
+  background: #5c6bc0; }
+
+a#adminNewFlight {
+  background: #EB282B;
+  color: white;
+  font-size: 18px; }
+
+a#adminNewFlight:hover {
+  color: white;
+  background: #ef9a9a; }
+
+ul#list li {
+  margin: 1em 2em; }
+
+/*end admin page */
+/* flight results */
+.secHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: .7em; }
+
+.button.return {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.77em;
+    background: #EB282B;
+    color: white;
+    border-radius: 100px;
+    margin-top: 2em;
+    border-radius: 50%;
+    margin-right: 2.1em;
+}
+
+.button.return a {
+  color: white; }
+
+  .button.return:hover {
+  background: #ef9a9a;
+  color:white; }
+
+/*end flight results*/
+/*Media queries */
+/*Mobile - Less than or equal to 270.*/
+@media only screen and (max-width: 440px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1em;
+    height: 5em; }
+
+  nav {
+    display: flex;
+    justify-content: center; }
+
+  /*previous journey*/
+  .journey {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; }
+
+  /*Previous journey*/ }
+/*Mobile - Less than or equal to 640.*/
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.5em; }
+
+  #container {
+    flex-direction: column; }
+
+  /*nav menu */
+  a.toggleNav {
+    display: flex;
+    margin-top: 2em; }
+
+  ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5em;
+    right: 0em;
+    width: 100%;
+    background: black;
+    text-align: center; }
+
+  nav ul {
+    display: none; }
+
+  /*end nav menu */
+  .Box p {
+    font-size: 2em; }
+
+  #box1Front {
+    height: 10em;
+    width: 30em;
+    margin: 1em 0; }
+
+  #box2Front {
+    height: 10em;
+    width: 30em; }
+
+  /*admin */
+  .adminPanel {
+    width: 80%;
+    padding: .5em; }
+
+  #adminNav {
+    flex-direction: column;
+    text-align: center; }
+
+  .admin h1 {
+    text-align: center; }
+
+  ul#list li {
+    margin: 1em 0em 0em 1em; }
+
+  /*previous journey*/
+  .journey {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; }
+
+  /*Previous journey*/
+  /*payment page */
+  #payment {
+    width: 80%; }
+
+  #payment .information {
+    flex-direction: column; }
+
+  .personal-information, .credit-card-information {
+    width: 100%; }
+
+  /*end payment page */ }
+/* less than/equal to 1024 and greater than 640*/
+@media only screen and (max-width: 1024px) and (min-width: 640px) {
+  /*nav menu */
+  a.toggleNav {
+    display: flex; }
+
+  ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5em;
+    right: 0em;
+    width: 100%;
+    background: black;
+    text-align: center; }
+
+  nav ul {
+    display: none; }
+
+  /*end nav menu */
+  #container {
+    flex-direction: column; }
+
+  #box1Front {
+    height: 10em;
+    width: 30em;
+    margin: 1em 0; }
+
+  #box2Front {
+    height: 10em;
+    width: 30em; } }
+
+/*# sourceMappingURL=style.css.map */
