@@ -10,10 +10,15 @@
   font-size: 16px;
   overflow: hidden; }
 
+@font-face {
+  font-family: FeatherScript;
+  src: url(../FeatherScript.otf); }
 a {
   text-decoration: none;
   color: black; }
 
+a:hover {
+  text-decoration: underline; }
 
 h1 {
   font-size: 3em; }
@@ -23,10 +28,11 @@ h1 {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden; }
+  overflow: hidden;
+  background: url(../bgPlain.jpg);
+  background-size: cover; }
 
 header {
-  background: white;
   height: 5em;
   width: 100%;
   display: flex;
@@ -37,13 +43,10 @@ header {
   align-items: center;
   margin-bottom: -2em;
   flex: 1;
-  margin-right: 2em;
   justify-content: flex-start; }
 
 #logo img {
-    width: 20em;
-    padding-left: 1em;
-}
+  width: 20em; }
 
 a.toggleNav {
   display: none; }
@@ -57,12 +60,13 @@ nav {
 nav a {
   margin: 1em;
   font-size: 20px;
-  color: #EB282B }
+  color: white; }
 
-nav a:hover{
-  background: white;
-  color:#ef9a9a;
-}
+#navitems {
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  display: flex;
+  align-items: center; }
 
 #login-Lang {
   display: flex;
@@ -85,14 +89,28 @@ nav a:hover{
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: url(../7clouds.jpg);
-  background-size: cover; }
+  flex-direction: column; }
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; }
+  width: 50%;
+  margin: 1em; }
+
+#calltoaction {
+  color: white;
+  text-align: center;
+  margin-bottom: 3em;
+  font-family: FeatherScript; }
+
+#fpSelect {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 #fpSec1 a {
   color: white; }
@@ -104,29 +122,28 @@ section {
   font-size: 3em; }
 
 #box1Front {
-  height: 30em;
   width: 30em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #EB282B; }
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em 2em;
+  border: 1px solid; }
 
 #box1Front:hover {
-  background: white;
-  color:#ef9a9a; }
+  background: #C2531B; }
 
 #box2Front {
-  height: 30em;
   width: 30em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
-  color: #0d47a1; }
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em 2em;
+  border: 1px solid; }
 
 #box2Front:hover {
-  background: white; 
-  color: #9fa8da; }
+  background: #b607ff; }
 
 /*-----------------------   findFlights page --------------------------------------*/
 #flightFinder {
@@ -134,12 +151,8 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #1a237e;
+  background: bisque;
   padding: 10px; }
-
-  #finf{
-    color: white;
-  }
 
 .flex-form * {
   display: flex !important;
@@ -165,7 +178,7 @@ form.flex-form {
   padding: 0; }
 
 #submit {
-  background: #EB282B;
+  background: #f50057;
   color: #fff;
   cursor: pointer;
   border-radius: 0 100px 100px 0;
@@ -173,8 +186,7 @@ form.flex-form {
   min-height: 5em; }
 
 #submit:hover {
-  background: #ef9a9a;
-  color: white; }
+  background: #b607ff; }
 
 input[type="swap"]:before {
   content: "\F0EC";
@@ -182,7 +194,7 @@ input[type="swap"]:before {
 
 .checkbox {
   display: flex;
-  color: #EB282B;
+  color: white;
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
@@ -264,8 +276,8 @@ input[type="swap"]:before {
   height: 70%;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: whitesmoke;
-  padding: 2em; }
+  background: bisque;
+  padding: 1em; }
 
 #previousJourneys h1 {
   border-bottom: 1px solid black;
@@ -304,23 +316,22 @@ input[type="swap"]:before {
 
 .pink {
   padding: 24px;
-  background-color: #1a237e;
+  background-color: deepPink;
   color: #fff; }
 
 .pink:hover {
-  background: #5c6bc0; }
+  background: #b607ff; }
 
 .yellow {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9e9e9e;
+  background-color: #f26822;
   color: white;
-  padding: 15px 10px !important; 
-  margin-left: 3em;}
+  padding: 15px 10px !important; }
 
 .yellow:hover {
-  background: #c5c5c5; }
+  background: #C2531B; }
 
 .journey div {
   page-break-after: always;
@@ -370,16 +381,8 @@ input[type="swap"]:before {
   height: 70%;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: whitesmoke;
-  padding: 2em; }
-
-h2 {
-    color: #1a237e;
-    padding-bottom: 1em; }
-
-#pay{
-  color: #757575;
-  margin-bottom: 1em; }  
+  background: bisque;
+  padding: 1em; }
 
 #payment input {
   width: 100%; }
@@ -408,19 +411,17 @@ h2 {
   width: 50%; }
 
 input#payment-submit {
-  background: #1a237e;
+  background: deepPink;
   color: white; }
 
 #payment-submit:hover {
-  background: #5c6bc0; }
+  background: #b607ff; }
 
 /*-------------------------------------------------------------------------*/
 /* login page*/
-
 #loginForm {
-    background: whitesmoke;
-    padding: 1em;
-    color: #757575; }
+  background: bisque;
+  padding: 1em; }
 
 .log-form {
   display: flex;
@@ -442,13 +443,14 @@ button.btn {
   margin: 1em;
   border: 0;
   font-size: 18px;
-  background: #1a237e;
-  color: white; }
+  background: orange;
+  color: #fff; }
 
 button.btn:hover {
-  background: #5c6bc0;
-  color: white;
-  cursor: pointer; }
+  background: #C2531B;
+  color: black;
+  cursor: pointer;
+  color: #fff; }
 
 /*admin page */
 .admin {
@@ -456,10 +458,10 @@ button.btn:hover {
   flex-direction: column; }
 
 .adminPanel {
-    width: 50%;
-    background: whitesmoke;
-    padding: 1em;
-    color: #757575;}
+  width: 50%;
+  background: bisque;
+  border: 1px solid black;
+  padding: 1em; }
 
 #adminNav {
   display: flex;
@@ -471,21 +473,20 @@ button.btn:hover {
   padding: 1em 2em; }
 
 a#adminPrevJourney {
-  background: #1a237e;
+  background: deepPink;
   color: white;
   font-size: 18px; }
 
 a#adminPrevJourney:hover {
-  background: #5c6bc0; }
+  background: #b607ff; }
 
 a#adminNewFlight {
-  background: #EB282B;
+  background: orange;
   color: white;
   font-size: 18px; }
 
 a#adminNewFlight:hover {
-  color: white;
-  background: #ef9a9a; }
+  background: #C2531B; }
 
 ul#list li {
   margin: 1em 2em; }
@@ -499,24 +500,15 @@ ul#list li {
   margin-right: .7em; }
 
 .button.return {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.77em;
-    background: #EB282B;
-    color: white;
-    border-radius: 100px;
-    margin-top: 2em;
-    border-radius: 50%;
-    margin-right: 2.1em;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background: orange;
+  color: white; }
 
 .button.return a {
   color: white; }
-
-  .button.return:hover {
-  background: #ef9a9a;
-  color:white; }
 
 /*end flight results*/
 /*Media queries */
@@ -545,9 +537,6 @@ ul#list li {
 @media only screen and (max-width: 640px) {
   h1 {
     font-size: 1.5em; }
-
-  #container {
-    flex-direction: column; }
 
   /*nav menu */
   a.toggleNav {
@@ -633,9 +622,6 @@ ul#list li {
     display: none; }
 
   /*end nav menu */
-  #container {
-    flex-direction: column; }
-
   #box1Front {
     height: 10em;
     width: 30em;
