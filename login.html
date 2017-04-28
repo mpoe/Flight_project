@@ -35,10 +35,10 @@
 
             <div class="log-form">
                 <h1>Login to your account</h1>
-                <form action="admin.html">
-                    <input type="text" title="username" placeholder="username" />
-                    <input type="password" title="username" placeholder="password" />
-                    <button type="submit" class="btn" onclick="location.href='admin.html';" value="Login" >Login</button>
+                <form id="frm-login" action="#">
+                    <input id="lbl-login-username" type="text" title="username" placeholder="username" />
+                    <input id="lbl-login-password" type="password" title="username" placeholder="password" />
+                    <button id="btn-login" type="submit" class="btn" value="Login" >Login</button>
                     <a class="forgot" href="#">Forgot Username?</a>
                 </form>
             </div><!--end log form -->
@@ -50,6 +50,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
+    $(document).on("submit", "#frm-login", function(e){
+        e.preventDefault();
+        sUsername = $("#lbl-login-username").val();
+        sPassword = $("#lbl-login-password").val();
+        console.log(sUsername);
+        console.log(sPassword);
+    });
 
     $(function() {
         $('.toggleNav').on('click', function () {
