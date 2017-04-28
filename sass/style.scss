@@ -16,13 +16,15 @@
 
 /*end mixin*/
 
-$fakeGold: fakeGold;
-$orange: orange;
-$bisque: bisque;
-$whiteText: white;
+$tbWhite: #fff;
+$tbRed: #EB282B;
+$tbBlue: #0d47a1;
+$tbOffWhite: whitesmoke;
+$tbGrey: #9e9e9e;
 
-$pinkHover: #b607ff;
-$yellowHover: #C2531B;
+$tbGreyHover: #c5c5c5;
+$tbRedHover: #ef9a9a;
+$tbBlueHover: #2196F3;
 
 $font16:16px; /*base font size*/
 
@@ -44,6 +46,10 @@ a:hover {
   text-decoration: underline;
 }
 
+li a {
+  text-decoration:underline;
+}
+
 h1 {
   font-size: 3em;
 }
@@ -57,7 +63,7 @@ h1 {
  }
 
 header {
-  background: black;
+  background: #fff;
   height: 5em;
   width: 100%;
   display: flex;
@@ -90,7 +96,7 @@ nav {
 nav a {
   margin: 1em;
   font-size: 20px;
-  color: $whiteText;
+  color: $tbRed;
 }
 
 #login-Lang {
@@ -100,7 +106,7 @@ nav a {
 }
 
 #login-Lang a {
-  color: $whiteText;
+  color: $tbWhite;
   margin: .5em;
   font-size: 20px;
 }
@@ -115,7 +121,7 @@ nav a {
   @include center-children;
   width: 100%;
   height: 100vh;
-  background: url(../bg.jpg);
+  background: url(../7clouds.jpg);
   background-size: cover;
 }
 
@@ -125,11 +131,11 @@ section {
 }
 
 #fpSec1 a {
-  color: $whiteText;
+  color: $tbWhite;
 }
 
 #fpSec2 a {
-  color: $whiteText;
+  color: $tbWhite;
 }
 
 .Box p {
@@ -140,31 +146,36 @@ section {
   height: 30em;
   width: 30em;
   @include center-children;
-  background: $orange;
+  background: $tbRed;
 }
 
 #box1Front:hover {
-  background: $yellowHover
+  background: $tbWhite;
+  color: $tbRedHover;
 }
 
 #box2Front {
   height: 30em;
   width: 30em;
   @include center-children;
-  background: $fakeGold;
+  background: $tbBlue;
 }
 
 #box2Front:hover {
-  background: $pinkHover;
+  background: $tbWhite;
+  color: $tbBlueHover;
 }
-
 /*-----------------------   findFlights page --------------------------------------*/
 
 #flightFinder {
   @include center-children;
   flex-direction: column;
-  background: $bisque;
+  background: $tbBlue;
   padding: 10px;
+}
+
+#flightFinder h1 {
+  color: $tbWhite;
 }
 
 .flex-form * {
@@ -195,7 +206,7 @@ form.flex-form {
 }
 
 #submit {
-  background: #f50057;
+  background: $tbRed;
   color: #fff;
   cursor: pointer;
   border-radius: 0 100px 100px 0;
@@ -204,7 +215,8 @@ form.flex-form {
 }
 
 #submit:hover {
-  background: $pinkHover;
+  background: $tbRedHover;
+  color: $tbWhite;
 }
 
 input[type="swap"]:before{
@@ -214,7 +226,7 @@ input[type="swap"]:before{
 
 .checkbox {
   display: flex;
-  color: $whiteText;
+  color: $tbWhite;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -311,7 +323,7 @@ input[type="swap"]:before{
   height: 70%;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: $bisque;
+  background: $tbOffWhite;
   padding: 1em;
 }
 #previousJourneys h1 {
@@ -347,27 +359,27 @@ input[type="swap"]:before{
   cursor: pointer;
   @include center-children;
 }
-.pink {
+.btnBlue {
   @extend %button;
   padding: 24px;
-  background-color: $fakeGold;
+  background-color: $tbBlue;
   color:#fff;
 }
 
-.pink:hover {
-  background: $pinkHover;
+.btnBlue:hover {
+  background: $tbBlueHover;
 }
 
 .yellow {
   @extend %button;
   @include center-children;
-  background-color: #f26822;
-  color: $whiteText;
+  background-color: $tbGrey;
+  color: $tbWhite;
   padding: 15px 10px !important;
 }
 
 .yellow:hover {
-  background: $yellowHover;
+  background: $tbGreyHover;
 }
 
 .journey div {
@@ -425,14 +437,14 @@ input[type="swap"]:before{
 
 /* ---------------- Payment page ------------------------- */
 #payment {
-  height: 70%;
+  width:50%;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: $bisque;
+  background: $tbOffWhite;
   padding: 1em;
 }
 #payment input {
-  width: 100%;
+  width: 95%;
 }
 #payment-submit {
   width: 100%;
@@ -459,19 +471,20 @@ input[type="swap"]:before{
 }
 
 input#payment-submit {
-  background: $fakeGold;
-  color: $whiteText;
+  background: $tbBlue;
+  color: $tbWhite;
 }
 
 #payment-submit:hover {
-  background: $pinkHover;
+  background: $tbWhite;
+  background: $tbBlueHover;
 }
 
 /*-------------------------------------------------------------------------*/
 
 /* login page*/
 #loginForm {
-  background: $bisque;
+  background: $tbOffWhite;
   padding: 1em;
 }
 
@@ -496,12 +509,12 @@ button.btn {
   margin: 1em;
   border: 0;
   font-size: 18px;
-  background: $orange;
+  background: $tbRed;
   color:#fff;
 }
 
 button.btn:hover {
-  background: $yellowHover;
+  background: $tbBlueHover;
   color: black;
   cursor: pointer;
   color:#fff;
@@ -514,7 +527,7 @@ button.btn:hover {
 
 .adminPanel {
   width: 50%;
-  background: $bisque;
+  background: $tbOffWhite;
   border: 1px solid black;
   padding: 1em;
 }
@@ -531,23 +544,23 @@ button.btn:hover {
 }
 
 a#adminPrevJourney {
-  background: $fakeGold;
-  color: $whiteText;
+  background: $tbBlue;
+  color: $tbWhite;
   font-size:18px;
 }
 
 a#adminPrevJourney:hover {
-  background: $pinkHover;
+  background: $tbBlueHover;
 }
 
 a#adminNewFlight {
-  background: $orange;
-  color: $whiteText;
+  background: $tbRed;
+  color: $tbWhite;
   font-size:18px;
 }
 
 a#adminNewFlight:hover {
-  background: $yellowHover;
+  background: $tbRedHover;
 }
 
 ul#list li {
@@ -567,12 +580,14 @@ ul#list li {
   @include center-children;
   @extend %button;
   font-size: 16px;
-  background: $orange;
-  color: $whiteText;
+  background: $tbRed;
+  color: $tbWhite;
 }
 
-.button.return a {
-  color: $whiteText;
+.button.return:hover {
+  border: 2px solid $tbRed;
+  color: $tbRedHover;
+  background:$tbOffWhite;
 }
 /*end flight results*/
 

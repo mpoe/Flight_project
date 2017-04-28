@@ -14,6 +14,11 @@ a {
   text-decoration: none;
   color: black; }
 
+a:hover {
+  text-decoration: underline; }
+
+li a {
+  text-decoration: underline; }
 
 h1 {
   font-size: 3em; }
@@ -26,7 +31,7 @@ h1 {
   overflow: hidden; }
 
 header {
-  background: white;
+  background: #fff;
   height: 5em;
   width: 100%;
   display: flex;
@@ -37,13 +42,10 @@ header {
   align-items: center;
   margin-bottom: -2em;
   flex: 1;
-  margin-right: 2em;
   justify-content: flex-start; }
 
 #logo img {
-    width: 20em;
-    padding-left: 1em;
-}
+  width: 20em; }
 
 a.toggleNav {
   display: none; }
@@ -57,12 +59,7 @@ nav {
 nav a {
   margin: 1em;
   font-size: 20px;
-  color: #EB282B }
-
-nav a:hover{
-  background: white;
-  color:#ef9a9a;
-}
+  color: #EB282B; }
 
 #login-Lang {
   display: flex;
@@ -70,7 +67,7 @@ nav a:hover{
   justify-content: flex-end; }
 
 #login-Lang a {
-  color: white;
+  color: #fff;
   margin: .5em;
   font-size: 20px; }
 
@@ -95,10 +92,10 @@ section {
   width: 50%; }
 
 #fpSec1 a {
-  color: white; }
+  color: #fff; }
 
 #fpSec2 a {
-  color: white; }
+  color: #fff; }
 
 .Box p {
   font-size: 3em; }
@@ -112,8 +109,8 @@ section {
   background: #EB282B; }
 
 #box1Front:hover {
-  background: white;
-  color:#ef9a9a; }
+  background: #fff;
+  color: #ef9a9a; }
 
 #box2Front {
   height: 30em;
@@ -121,12 +118,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
-  color: #0d47a1; }
+  background: #0d47a1; }
 
 #box2Front:hover {
-  background: white; 
-  color: #9fa8da; }
+  background: #fff;
+  color: #2196F3; }
 
 /*-----------------------   findFlights page --------------------------------------*/
 #flightFinder {
@@ -134,12 +130,11 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #1a237e;
+  background: #0d47a1;
   padding: 10px; }
 
-  #finf{
-    color: white;
-  }
+#flightFinder h1 {
+  color: #fff; }
 
 .flex-form * {
   display: flex !important;
@@ -174,7 +169,7 @@ form.flex-form {
 
 #submit:hover {
   background: #ef9a9a;
-  color: white; }
+  color: #fff; }
 
 input[type="swap"]:before {
   content: "\F0EC";
@@ -182,7 +177,7 @@ input[type="swap"]:before {
 
 .checkbox {
   display: flex;
-  color: #EB282B;
+  color: #fff;
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
@@ -265,7 +260,7 @@ input[type="swap"]:before {
   overflow-x: hidden;
   overflow-y: scroll;
   background: whitesmoke;
-  padding: 2em; }
+  padding: 1em; }
 
 #previousJourneys h1 {
   border-bottom: 1px solid black;
@@ -291,7 +286,7 @@ input[type="swap"]:before {
   margin: 0 10px;
   width: 100px; }
 
-.pink, .yellow, .button.return {
+.btnBlue, .yellow, .button.return {
   height: 5em;
   width: 10em;
   padding: 13px;
@@ -302,22 +297,21 @@ input[type="swap"]:before {
   justify-content: center;
   align-items: center; }
 
-.pink {
+.btnBlue {
   padding: 24px;
-  background-color: #1a237e;
+  background-color: #0d47a1;
   color: #fff; }
 
-.pink:hover {
-  background: #5c6bc0; }
+.btnBlue:hover {
+  background: #2196F3; }
 
 .yellow {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #9e9e9e;
-  color: white;
-  padding: 15px 10px !important; 
-  margin-left: 3em;}
+  color: #fff;
+  padding: 15px 10px !important; }
 
 .yellow:hover {
   background: #c5c5c5; }
@@ -367,22 +361,14 @@ input[type="swap"]:before {
 /*end previous journey page */
 /* ---------------- Payment page ------------------------- */
 #payment {
-  height: 70%;
+  width: 50%;
   overflow-x: hidden;
   overflow-y: scroll;
   background: whitesmoke;
-  padding: 2em; }
-
-h2 {
-    color: #1a237e;
-    padding-bottom: 1em; }
-
-#pay{
-  color: #757575;
-  margin-bottom: 1em; }  
+  padding: 1em; }
 
 #payment input {
-  width: 100%; }
+  width: 95%; }
 
 #payment-submit {
   width: 100%;
@@ -408,19 +394,18 @@ h2 {
   width: 50%; }
 
 input#payment-submit {
-  background: #1a237e;
-  color: white; }
+  background: #0d47a1;
+  color: #fff; }
 
 #payment-submit:hover {
-  background: #5c6bc0; }
+  background: #fff;
+  background: #2196F3; }
 
 /*-------------------------------------------------------------------------*/
 /* login page*/
-
 #loginForm {
-    background: whitesmoke;
-    padding: 1em;
-    color: #757575; }
+  background: whitesmoke;
+  padding: 1em; }
 
 .log-form {
   display: flex;
@@ -442,13 +427,14 @@ button.btn {
   margin: 1em;
   border: 0;
   font-size: 18px;
-  background: #1a237e;
-  color: white; }
+  background: #EB282B;
+  color: #fff; }
 
 button.btn:hover {
-  background: #5c6bc0;
-  color: white;
-  cursor: pointer; }
+  background: #2196F3;
+  color: black;
+  cursor: pointer;
+  color: #fff; }
 
 /*admin page */
 .admin {
@@ -456,10 +442,10 @@ button.btn:hover {
   flex-direction: column; }
 
 .adminPanel {
-    width: 50%;
-    background: whitesmoke;
-    padding: 1em;
-    color: #757575;}
+  width: 50%;
+  background: whitesmoke;
+  border: 1px solid black;
+  padding: 1em; }
 
 #adminNav {
   display: flex;
@@ -471,20 +457,19 @@ button.btn:hover {
   padding: 1em 2em; }
 
 a#adminPrevJourney {
-  background: #1a237e;
-  color: white;
+  background: #0d47a1;
+  color: #fff;
   font-size: 18px; }
 
 a#adminPrevJourney:hover {
-  background: #5c6bc0; }
+  background: #2196F3; }
 
 a#adminNewFlight {
   background: #EB282B;
-  color: white;
+  color: #fff;
   font-size: 18px; }
 
 a#adminNewFlight:hover {
-  color: white;
   background: #ef9a9a; }
 
 ul#list li {
@@ -499,24 +484,17 @@ ul#list li {
   margin-right: .7em; }
 
 .button.return {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.77em;
-    background: #EB282B;
-    color: white;
-    border-radius: 100px;
-    margin-top: 2em;
-    border-radius: 50%;
-    margin-right: 2.1em;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background: #EB282B;
+  color: #fff; }
 
-.button.return a {
-  color: white; }
-
-  .button.return:hover {
-  background: #ef9a9a;
-  color:white; }
+.button.return:hover {
+  border: 2px solid #EB282B;
+  color: #ef9a9a;
+  background: whitesmoke; }
 
 /*end flight results*/
 /*Media queries */
