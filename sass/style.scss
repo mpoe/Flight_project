@@ -171,7 +171,8 @@ section {
 }
 
 #box1Front:hover {
-  background: $yellowHover
+  background: $orange;
+  border-color:$orange;
 }
 
 #box2Front {
@@ -183,7 +184,8 @@ section {
 }
 
 #box2Front:hover {
-  background: $pinkHover;
+  background: $deepPink;
+  border-color: $deepPink;
 }
 
 /*-----------------------   findFlights page --------------------------------------*/

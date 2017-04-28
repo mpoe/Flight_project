@@ -131,7 +131,8 @@ section {
   border: 1px solid; }
 
 #box1Front:hover {
-  background: #C2531B; }
+  background: orange;
+  border-color: orange; }
 
 #box2Front {
   width: 30em;
@@ -143,7 +144,8 @@ section {
   border: 1px solid; }
 
 #box2Front:hover {
-  background: #b607ff; }
+  background: deepPink;
+  border-color: deepPink; }
 
 /*-----------------------   findFlights page --------------------------------------*/
 #flightFinder {
