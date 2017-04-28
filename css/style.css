@@ -453,9 +453,8 @@ button.btn {
 
 button.btn:hover {
   background: darkorange;
-  color: black;
   cursor: pointer;
-  color: #fff; }
+  color: white; }
 
 /*admin page */
 .admin {
