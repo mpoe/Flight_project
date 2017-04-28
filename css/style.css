@@ -21,7 +21,8 @@ a:hover {
   text-decoration: underline; }
 
 h1 {
-  font-size: 3em; }
+  font-size: 3em;
+  color: white; }
 
 .wrapper {
   width: 100%;
@@ -153,7 +154,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: bisque;
+  background: rgba(255, 255, 255, 0.3);
   padding: 10px; }
 
 .flex-form * {
@@ -177,10 +178,11 @@ form.flex-form {
 
 #linkAroundSubmit {
   background: none;
-  padding: 0; }
+  padding: 0;
+  text-decoration: none; }
 
 #submit {
-  background: #f50057;
+  background: orange;
   color: #fff;
   cursor: pointer;
   border-radius: 0 100px 100px 0;
@@ -188,7 +190,7 @@ form.flex-form {
   min-height: 5em; }
 
 #submit:hover {
-  background: #b607ff; }
+  background: darkorange; }
 
 input[type="swap"]:before {
   content: "\F0EC";
@@ -278,7 +280,7 @@ input[type="swap"]:before {
   height: 70%;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: bisque;
+  background: rgba(255, 255, 255, 0.3);
   padding: 1em; }
 
 #previousJourneys h1 {
@@ -333,7 +335,7 @@ input[type="swap"]:before {
   padding: 15px 10px !important; }
 
 .yellow:hover {
-  background: #C2531B; }
+  background: darkorange; }
 
 .journey div {
   page-break-after: always;
@@ -381,9 +383,10 @@ input[type="swap"]:before {
 /* ---------------- Payment page ------------------------- */
 #payment {
   height: 70%;
+  width: 50%;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: bisque;
+  background: rgba(255, 255, 255, 0.3);
   padding: 1em; }
 
 #payment input {
@@ -422,7 +425,7 @@ input#payment-submit {
 /*-------------------------------------------------------------------------*/
 /* login page*/
 #loginForm {
-  background: bisque;
+  background: rgba(255, 255, 255, 0.3);
   padding: 1em; }
 
 .log-form {
@@ -449,7 +452,7 @@ button.btn {
   color: #fff; }
 
 button.btn:hover {
-  background: #C2531B;
+  background: darkorange;
   color: black;
   cursor: pointer;
   color: #fff; }
@@ -461,8 +464,8 @@ button.btn:hover {
 
 .adminPanel {
   width: 50%;
-  background: bisque;
-  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid white;
   padding: 1em; }
 
 #adminNav {
@@ -488,7 +491,7 @@ a#adminNewFlight {
   font-size: 18px; }
 
 a#adminNewFlight:hover {
-  background: #C2531B; }
+  background: darkorange; }
 
 ul#list li {
   margin: 1em 2em; }

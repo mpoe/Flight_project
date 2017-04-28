@@ -15,11 +15,11 @@
 
 $deepPink: deepPink;
 $orange: orange;
-$bisque: bisque;
+$transParentBG: rgba(255, 255, 255, 0.3);
 $whiteText: white;
 
 $pinkHover: #b607ff;
-$yellowHover: #C2531B;
+$orangeHover: darkorange;
 
 $font16:16px; /*base font size*/
 
@@ -48,6 +48,7 @@ a:hover {
 
 h1 {
   font-size: 3em;
+  color:$whiteText;
 }
 
 .wrapper {
@@ -193,7 +194,7 @@ section {
 #flightFinder {
   @include center-children;
   flex-direction: column;
-  background: $bisque;
+  background: $transParentBG;
   padding: 10px;
 }
 
@@ -222,10 +223,11 @@ form.flex-form {
 #linkAroundSubmit {
   background: none;
   padding:0;
+  text-decoration: none;
 }
 
 #submit {
-  background: #f50057;
+  background: $orange;
   color: #fff;
   cursor: pointer;
   border-radius: 0 100px 100px 0;
@@ -234,7 +236,7 @@ form.flex-form {
 }
 
 #submit:hover {
-  background: $pinkHover;
+  background: $orangeHover;
 }
 
 input[type="swap"]:before{
@@ -341,7 +343,7 @@ input[type="swap"]:before{
   height: 70%;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: $bisque;
+  background: $transParentBG;
   padding: 1em;
 }
 #previousJourneys h1 {
@@ -397,7 +399,7 @@ input[type="swap"]:before{
 }
 
 .yellow:hover {
-  background: $yellowHover;
+  background: $orangeHover;
 }
 
 .journey div {
@@ -456,9 +458,10 @@ input[type="swap"]:before{
 /* ---------------- Payment page ------------------------- */
 #payment {
   height: 70%;
+  width:50%;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: $bisque;
+  background: $transParentBG;
   padding: 1em;
 }
 #payment input {
@@ -501,7 +504,7 @@ input#payment-submit {
 
 /* login page*/
 #loginForm {
-  background: $bisque;
+  background: $transParentBG;
   padding: 1em;
 }
 
@@ -531,7 +534,7 @@ button.btn {
 }
 
 button.btn:hover {
-  background: $yellowHover;
+  background: $orangeHover;
   color: black;
   cursor: pointer;
   color:#fff;
@@ -544,8 +547,8 @@ button.btn:hover {
 
 .adminPanel {
   width: 50%;
-  background: $bisque;
-  border: 1px solid black;
+  background: $transParentBG;
+  border: 1px solid $whiteText;
   padding: 1em;
 }
 
@@ -577,7 +580,7 @@ a#adminNewFlight {
 }
 
 a#adminNewFlight:hover {
-  background: $yellowHover;
+  background: $orangeHover;
 }
 
 ul#list li {
