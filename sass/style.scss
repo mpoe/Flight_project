@@ -159,7 +159,7 @@ section {
   color: $whiteText;
 }
 
-.Box p {
+.Box h2 {
   font-size:3em;
 }
 
@@ -169,6 +169,7 @@ section {
   background: rgba(255, 255, 255, 0.3);
   padding: 1em 2em;
   border: 1px solid;
+  flex-direction: column;
 }
 
 #box1Front:hover {
@@ -182,6 +183,7 @@ section {
   background: rgba(255, 255, 255, 0.3);
   padding: 1em 2em;
   border: 1px solid;
+  flex-direction: column;
 }
 
 #box2Front:hover {
@@ -661,7 +663,7 @@ ul#list li {
   }
   /*end nav menu */
 
-  .Box p {
+  .Box h2 {
     font-size: 2em;
   }
 
