@@ -126,7 +126,6 @@ nav a {
   @include center-children;
   width: 100%;
   height: 100vh;
-  flex-direction: column;
 }
 
 section {
@@ -234,7 +233,6 @@ form.flex-form {
   cursor: pointer;
   border-radius: 0 100px 100px 0;
   width: 80px;
-  min-height: 5em;
 }
 
 #submit:hover {
@@ -259,6 +257,7 @@ input[type="swap"]:before{
 
   #flightFinder {
     width: 80%;
+    height:100%;
   }
 
   form.flex-form {
@@ -309,17 +308,17 @@ input[type="swap"]:before{
   #linkAroundSubmit {
     width: 100%;
     padding:0;
+    margin-top: 1em;
   }
 
   #submit {
     width: 100%;
-    height: 4em;
     margin: 0 auto;
     font-size: 20px;
     border-radius: 0;
     display: flex;
     justify-content: center;
-    min-height: 2em;
+    text-align: center;
   }
 
   form.checkbox {
@@ -617,14 +616,28 @@ ul#list li {
   header {
     @include center-children;
     flex-direction: column;
-    padding-top: 1em;
-    height: 5em;
+    margin-top: 1em;
+    height: 6em;
   }
 
   nav {
     display: flex;
     justify-content: center;
   }
+
+  #fpSelect {
+    justify-content: space-around;
+    height: auto;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  #calltoaction {
+    margin-bottom:0;
+  }
+
 
   /*previous journey*/
   .journey {
@@ -642,17 +655,22 @@ ul#list li {
     font-size: 1.5em;
   }
 
+  section {
+    width: 100%;
+  }
 
   /*nav menu */
   a.toggleNav {
     display: flex;
     margin-top:2em;
+    z-index: 900;
   }
 
   ul.open {
     @include flex-col;
     position: absolute;
     top: 5em;
+    padding-top:1em; // helps it clear the open/close button.
     right: 0em;
     width: 100%;
     background: black;
@@ -669,13 +687,13 @@ ul#list li {
 
   #box1Front {
     height: 10em;
-    width: 30em;
     margin: 1em 0;
+    width:20em;
   }
 
   #box2Front {
     height: 10em;
-    width: 30em;
+    width:20em;
   }
 
 
@@ -725,9 +743,10 @@ ul#list li {
 
 /* less than/equal to 1024 and greater than 640*/
 @media only screen and (max-width: 1024px) and (min-width: 640px) {
-  /*nav menu */
-  a.toggleNav {
-    display: flex;
+
+
+  section {
+    width: 100%;
   }
 
   ul.open {
@@ -745,15 +764,5 @@ ul#list li {
   /*end nav menu */
 
 
-  #box1Front {
-    height: 10em;
-    width: 30em;
-    margin: 1em 0;
-  }
-
-  #box2Front {
-    height: 10em;
-    width: 30em;
-  }
 
 }

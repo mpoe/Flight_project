@@ -89,8 +89,7 @@ nav a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  flex-direction: column; }
+  height: 100vh; }
 
 section {
   display: flex;
@@ -188,8 +187,7 @@ form.flex-form {
   color: #fff;
   cursor: pointer;
   border-radius: 0 100px 100px 0;
-  width: 80px;
-  min-height: 5em; }
+  width: 80px; }
 
 #submit:hover {
   background: darkorange; }
@@ -208,7 +206,8 @@ input[type="swap"]:before {
 /* Smartphone and small tablets for flight booking form. */
 @media only screen and (max-width: 840px) {
   #flightFinder {
-    width: 80%; }
+    width: 80%;
+    height: 100%; }
 
   form.flex-form {
     flex-wrap: nowrap; }
@@ -250,17 +249,17 @@ input[type="swap"]:before {
 
   #linkAroundSubmit {
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    margin-top: 1em; }
 
   #submit {
     width: 100%;
-    height: 4em;
     margin: 0 auto;
     font-size: 20px;
     border-radius: 0;
     display: flex;
     justify-content: center;
-    min-height: 2em; }
+    text-align: center; }
 
   form.checkbox {
     display: flex;
@@ -525,12 +524,22 @@ ul#list li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 1em;
-    height: 5em; }
+    margin-top: 1em;
+    height: 6em; }
 
   nav {
     display: flex;
     justify-content: center; }
+
+  #fpSelect {
+    justify-content: space-around;
+    height: auto; }
+
+  section {
+    width: 100%; }
+
+  #calltoaction {
+    margin-bottom: 0; }
 
   /*previous journey*/
   .journey {
@@ -544,16 +553,21 @@ ul#list li {
   h1 {
     font-size: 1.5em; }
 
+  section {
+    width: 100%; }
+
   /*nav menu */
   a.toggleNav {
     display: flex;
-    margin-top: 2em; }
+    margin-top: 2em;
+    z-index: 900; }
 
   ul.open {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 5em;
+    padding-top: 1em;
     right: 0em;
     width: 100%;
     background: black;
@@ -568,12 +582,12 @@ ul#list li {
 
   #box1Front {
     height: 10em;
-    width: 30em;
-    margin: 1em 0; }
+    margin: 1em 0;
+    width: 20em; }
 
   #box2Front {
     height: 10em;
-    width: 30em; }
+    width: 20em; }
 
   /*admin */
   .adminPanel {
@@ -610,9 +624,8 @@ ul#list li {
   /*end payment page */ }
 /* less than/equal to 1024 and greater than 640*/
 @media only screen and (max-width: 1024px) and (min-width: 640px) {
-  /*nav menu */
-  a.toggleNav {
-    display: flex; }
+  section {
+    width: 100%; }
 
   ul.open {
     display: flex;
@@ -627,14 +640,6 @@ ul#list li {
   nav ul {
     display: none; }
 
-  /*end nav menu */
-  #box1Front {
-    height: 10em;
-    width: 30em;
-    margin: 1em 0; }
-
-  #box2Front {
-    height: 10em;
-    width: 30em; } }
+  /*end nav menu */ }
 
 /*# sourceMappingURL=style.css.map */
