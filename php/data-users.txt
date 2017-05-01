@@ -10,11 +10,6 @@
         "sPassword": "123"
     },
     {
-        "sID": "3",
-        "sUsername": "ddfsdf",
-        "sPassword": "dfd"
-    },
-    {
         "sID": "4",
         "sUsername": "a",
         "sPassword": "a"

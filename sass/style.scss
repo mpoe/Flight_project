@@ -148,15 +148,13 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: $whiteText;
+  cursor: pointer;
 }
 
-#fpSec1 a {
-  color: $whiteText;
-}
 
-#fpSec2 a {
-  color: $whiteText;
-}
+
+
 
 .Box h2 {
   font-size:3em;

@@ -60,7 +60,7 @@
         console.log(sUsername);
         console.log(sPassword);
 
-        var sUrl = "php/api-create-user.php";
+        var sUrl = "php/api-login.php";
 
         $.ajax({
         "url":sUrl,
@@ -70,7 +70,10 @@
         //We expect json from ajax
         "dataType":"json" 
     })
-});
+
+        window.location.replace("admin.html");
+
+    });
 
     $(function() {
         $('.toggleNav').on('click', function () {
