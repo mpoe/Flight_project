@@ -36,10 +36,10 @@
 
             <div class="log-form">
                 <h1>Sign up for an account</h1>
-                <form id="frm-login" action="#">
+                <form id="frm-signup" action="#">
                     <input id="lbl-signUp-username" type="text" title="username" placeholder="username" />
                     <input id="lbl-signUp-password" type="password" title="password" placeholder="password" />
-                    <input id="lbl-signUp-email" type="email" title="Email" placeholder="Email" />
+                    <!--<input id="lbl-signUp-email" type="email" title="Email" placeholder="Email" />-->
                     <button id="btn-signUp" type="submit" class="btn" value="signUp" >Sign Up</button>
                 </form>
             </div><!--end log form -->
@@ -50,13 +50,25 @@
 </wrapper>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/login.js"></script>
 <script>
-    $(document).on("submit", "#frm-login", function(e){
+    $(document).on("submit", "#frm-signup", function(e){
         e.preventDefault();
-        sUsername = $("#lbl-login-username").val();
-        sPassword = $("#lbl-login-password").val();
+        sUsername = $("#lbl-signUp-username").val();
+        sPassword = $("#lbl-signUp-password").val();
         console.log(sUsername);
         console.log(sPassword);
+
+        var sUrl = "php/api-create-user.php";
+
+        $.ajax({
+            "url":sUrl,
+            "method":"get",
+            "data":{"username":sUsername,"password":sPassword},
+            "cache":true,
+            //We expect json from ajax
+            "dataType":"json"
+        })
     });
 
     $(function() {

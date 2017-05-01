@@ -4,10 +4,8 @@ function fnCheckSession(){
 	var sUrl = "php/api-check-login.php";
 	$.getJSON(sUrl).done(function(jData){
 		if(jData.status=="ok"){
-			console.log("TRUE")
 			return true;
 		}else{
-			console.log("FALSE")
 			return false;
 		}
 	});
