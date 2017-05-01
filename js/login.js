@@ -1,16 +1,19 @@
 var jUserData = null;
 
+// Disable ajax async, gives way too more issues..
+$.ajaxSetup({
+    async: false
+});
+
 function fnCheckSession(){
+	var checker = false;
 	var sUrl = "php/api-check-login.php";
 	$.getJSON(sUrl).done(function(jData){
 		if(jData.status=="ok"){
-			console.log("TRUE")
-			return true;
-		}else{
-			console.log("FALSE")
-			return false;
+			checker = true;
 		}
 	});
+	return checker;
 }
 
 function fnGetSessionData(){
