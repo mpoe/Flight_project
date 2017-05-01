@@ -56,7 +56,18 @@
         sPassword = $("#lbl-login-password").val();
         console.log(sUsername);
         console.log(sPassword);
-    });
+
+        var sUrl = "php/api-create-user.php";
+
+        $.ajax({
+        "url":sUrl,
+        "method":"get",
+        "data":{"username":sUsername,"password":sPassword},
+        "cache":true,
+        //We expect json from ajax
+        "dataType":"json" 
+    })
+});
 
     $(function() {
         $('.toggleNav').on('click', function () {
