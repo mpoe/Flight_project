@@ -11,19 +11,19 @@
     },
     {
       "ID": 2,
-      "departure": "HEL - Helsinki",
+      "departure": "CPH - Copenhagen",
       "departure_date": "MON 6 Mar",
       "departure_time": "15:35",
-      "arrival": "CPH - Copenhagen",
+      "arrival": "HEL - Helsinki",
       "arrival_date": "MON 6 Mar",
       "arrival_time": "16:10"
     },
     {
       "ID": 3,
-      "departure": "CPH - Copenhagen",
+      "departure": "HEL - Copenhagen",
       "departure_date": "SUN 19 FEB",
       "departure_time": "08:15",
-      "arrival": "LTN - London",
+      "arrival": "HEL - Helsinki",
       "arrival_date": "SUN 19 Feb",
       "arrival_time": "11:30"
     },
@@ -31,6 +31,24 @@
       "ID": 4,
       "departure": "LTN - London",
       "departure_date": "MON 20 FEB",
+      "departure_time": "20:40",
+      "arrival": "CPH - Copenhagen",
+      "arrival_date": "MON 20 Feb",
+      "arrival_time": "21:35"
+    },
+    {
+      "ID": 5,
+      "departure": "LTN - London",
+      "departure_date": "WED 4 MAR",
+      "departure_time": "20:40",
+      "arrival": "CPH - Copenhagen",
+      "arrival_date": "MON 20 Feb",
+      "arrival_time": "21:35"
+    },
+    {
+      "ID": 6,
+      "departure": "LTN - London",
+      "departure_date": "Fre 1 April",
       "departure_time": "20:40",
       "arrival": "CPH - Copenhagen",
       "arrival_date": "MON 20 Feb",
