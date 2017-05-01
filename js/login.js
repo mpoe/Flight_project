@@ -1,18 +1,30 @@
+var jUserData = null;
+
 function fnCheckSession(){
-	var sUrl = "api-check-login.php";
+	var sUrl = "php/api-check-login.php";
 	$.getJSON(sUrl).done(function(jData){
 		if(jData.status=="ok"){
+			console.log("TRUE")
 			return true;
 		}else{
+			console.log("FALSE")
 			return false;
 		}
 	});
 }
 
 function fnGetSessionData(){
-	// var sUrl = "api-check-login.php";
+	var sUrl = "php/api-check-login.php";
 	$.getJSON(sUrl).done(function(jData){
-		//TO DO
+		console.log(jData);
+		console.log(jUserData);
+		jUserData = jData;
+		console.log(jUserData);
 	});
+}
+
+function fnLogout(){
+	$.get("php/api-logout.php");
+	jUserData = null;
 }
 
