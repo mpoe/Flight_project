@@ -1,0 +1,12 @@
+[
+    {
+        "sID": "1",
+        "sUsername": "Morten",
+        "sPassword": "123"
+    },
+    {
+        "sID": "2",
+        "sUsername": "Mpoe",
+        "sPassword": "123"
+    }
+]
