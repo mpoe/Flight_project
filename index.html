@@ -37,12 +37,10 @@
                 <h1>Going on an adventure somewhere new?</br> or heading back to the same place?</h1>
             </div>
             <section id="fpSec1">
-                <a href="findFlight.html">
                     <div class="Box" id="box1Front">
                         <h2>New Journey</h2>
                         <p>Find a cheap flight somewhere new</p>
                     </div>
-                </a>
             </section>
 
             <section id="fpSec2">
@@ -64,6 +62,11 @@
             $('nav ul').toggleClass('open'); /*only when its enabled will this class apply - enabled = clicked*/
         })
     });
+
+    $('#fpSec1').on("click", function() {
+            window.location.replace("findFlight.html")
+        });
+
 
     $('#fpSec2').on("click", function() {
        if(fnCheckSession()) { //if its true.
