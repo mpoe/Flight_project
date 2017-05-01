@@ -1,0 +1,40 @@
+{
+  "flights": [
+    {
+      "ID": 1,
+      "departure": "CPH - Copenhagen",
+      "departure_date": "TUE 31 Mar",
+      "departure_time": "12:30",
+      "arrival": "HEL - Helsinki",
+      "arrival_date": "WED 1 Mar",
+      "arrival_time": "15:50"
+    },
+    {
+      "ID": 2,
+      "departure": "HEL - Helsinki",
+      "departure_date": "MON 6 Mar",
+      "departure_time": "15:35",
+      "arrival": "CPH - Copenhagen",
+      "arrival_date": "MON 6 Mar",
+      "arrival_time": "16:10"
+    },
+    {
+      "ID": 3,
+      "departure": "CPH - Copenhagen",
+      "departure_date": "SUN 19 FEB",
+      "departure_time": "08:15",
+      "arrival": "LTN - London",
+      "arrival_date": "SUN 19 Feb",
+      "arrival_time": "11:30"
+    },
+    {
+      "ID": 4,
+      "departure": "LTN - London",
+      "departure_date": "MON 20 FEB",
+      "departure_time": "20:40",
+      "arrival": "CPH - Copenhagen",
+      "arrival_date": "MON 20 Feb",
+      "arrival_time": "21:35"
+    }
+  ]
+}

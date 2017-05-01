@@ -33,19 +33,19 @@
     <div id="container">
         <div id="flightFinder">
                 <h1>Find flights</h1>
-            <form  class="flex-form">
+            <form  class="flex-form" method="get" action="flightResults.html">
 
-                <input id="from" type="search" placeholder="From">
+                <input id="from" type="search" value="Copenhagen" name="from" placeholder="From">
 
                 <i class="fa fa-exchange" aria-hidden="true"></i>
 
-                <input id="to" type="search" placeholder="To">
+                <input id="to" type="search" value="London" name="to" placeholder="To">
 
                 <div class="dates">
 
-                    <input id="date1" type="date" name="from">
+                    <input id="date1" type="date" name="date-from">
 
-                    <input id="date2" type="date" name="to">
+                    <input id="date2" type="date" name="date-to">
 
                 </div>
 
@@ -62,7 +62,7 @@
                 </select>
 
 
-                <a id="linkAroundSubmit" href="flightResults.html"> <input id= "submit" value="Search"></a>
+                <a id="linkAroundSubmit" href="flightResults.html"> <input id= "submit" type="submit" value="Search"></a>
 
             </form>
 

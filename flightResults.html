@@ -36,142 +36,6 @@
                 <h1>Flight Results</h1>
                 <div class="button return"><a href="findFlight.html"> Search again</a></div>
             </div>
-            <div class="journey">
-                <div class="departure">
-                    Departure<br>
-                    CPH - Copenhagen<br>
-                    TUE 31 Mar<br>
-                    12:30
-                </div>
-                <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
-                <div class="arrival">
-                    Arrival<br>
-                    HEL - Helsinki<br>
-                    WED 1 Mar<br>
-                    15:50
-                </div>
-                <!--<a href="#" class="button yellow">Change my Flight details</a>-->
-                <a href="payment.html" class="button pink">Book</a>
-            </div>
-            <div class="journey">
-                <div class="departure">
-                    Departure<br>
-                    HEL - Helsinki<br>
-                    MON 6 Mar<br>
-                    15:35
-                </div>
-                <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
-                <div class="arrival">
-                    Arrival<br>
-                    CPH - Copenhagen<br>
-                    MON 6 Mar<br>
-                    16:10
-                </div>
-                <!--<a href="#" class="button yellow">Change my Flight details</a>-->
-                <a href="payment.html" class="button pink">Book</a>
-            </div>
-            <div class="journey">
-                <div class="departure">
-                    Departure<br>
-                    CPH - Copenhagen<br>
-                    SUN 19 Feb<br>
-                    8:15
-                </div>
-                <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
-                <div class="arrival">
-                    Arrival<br>
-                    LTN - London<br>
-                    SUN 19 Feb<br>
-                    11:30
-                </div>
-                <!--<a href="#" class="button yellow">Change my Flight details</a>-->
-                <a href="payment.html" class="button pink">Book</a>
-            </div>
-            <div class="journey">
-                <div class="departure">
-                    Departure<br>
-                    LTN - London<br>
-                    MON 20 Feb<br>
-                    20:40
-                </div>
-                <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
-                <div class="arrival">
-                    Arrival<br>
-                    CPH - Copenhagen<br>
-                    MON 20 Feb<br>
-                    21:35
-                </div>
-                <!--<a href="#" class="button yellow">Change my Flight details</a>-->
-                <a href="payment.html" class="button pink">Book</a>
-            </div>
-            <div class="journey">
-                <div class="departure">
-                    Departure<br>
-                    CPH - Copenhagen<br>
-                    WED 1 Mar<br>
-                    13:15
-                </div>
-                <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
-                <div class="arrival">
-                    Arrival<br>
-                    HEL - Helsinki<br>
-                    WED 1 Mar<br>
-                    15:50
-                </div>
-                <!--<a href="#" class="button yellow">Change my Flight details</a>-->
-                <a href="payment.html" class="button pink">Book</a>
-            </div>
-            <div class="journey">
-                <div class="departure">
-                    Departure<br>
-                    HEL - Helsinki<br>
-                    MON 6 Mar<br>
-                    15:35
-                </div>
-                <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
-                <div class="arrival">
-                    Arrival<br>
-                    CPH - Copenhagen<br>
-                    MON 6 Mar<br>
-                    16:10
-                </div>
-                <!--<a href="#" class="button yellow">Change my Flight details</a>-->
-                <a href="payment.html" class="button pink">Book</a>
-            </div>
-            <div class="journey">
-                <div class="departure">
-                    Departure<br>
-                    CPH - Copenhagen<br>
-                    SUN 19 Feb<br>
-                    8:15
-                </div>
-                <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
-                <div class="arrival">
-                    Arrival<br>
-                    LTN - London<br>
-                    SUN 19 Feb<br>
-                    11:30
-                </div>
-                <!--<a href="#" class="button yellow">Change my Flight details</a>-->
-                <a href="payment.html" class="button pink">Book</a>
-            </div>
-            <div class="journey">
-                <div class="departure">
-                    Departure<br>
-                    LTN - London<br>
-                    MON 20 Feb<br>
-                    20:40
-                </div>
-                <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
-                <div class="arrival">
-                    Arrival<br>
-                    CPH - Copenhagen<br>
-                    MON 20 Feb<br>
-                    21:35
-                </div>
-                <!--<a href="#" class="button yellow">Change my Flight details</a>-->
-                <a href="payment.html" class="button pink">Book</a>
-            </div>
         </div>
     </div>
 </wrapper>
@@ -180,12 +44,61 @@
 <script src="js/login.js"></script>
 <script>
 
-    $(function() {
-        $('.toggleNav').on('click', function () {
-            $('nav ul').toggleClass('open'); /*only when its enabled will this class apply - enabled = clicked*/
-        })
+  //Get the JSON
+  $.get('json/flights.json', function(oData) {
+    //Search the array through for matches
+    $.each(oData.flights, function(index, oFlight){
+      if(oFlight.departure.includes(getUrlParameter('from')) || oFlight.arrival.includes(getUrlParameter('to'))) {
+        var sFlightHtml =
+        '<div class="journey">\
+            <div class="departure">\
+                Departure<br>\
+                ' +oFlight.departure+ '<br>\
+                ' +oFlight.departure_date+ '<br>\
+                ' +oFlight.departure_time+ '\
+            </div>\
+            <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>\
+            <div class="arrival">\
+                Arrival<br>\
+                ' +oFlight.arrival+ '<br>\
+                ' +oFlight.arrival_date+ '<br>\
+                ' +oFlight.arrival_time+ '\
+            </div>\
+            <a href="payment.html" class="button pink">Book</a>\
+        </div>';
+        $('#previousJourneys').append(sFlightHtml);
+      }
     });
 
+    //If there is no journeys added, show "NO RESULTS"
+    if($('.journey').length < 1) {
+      var sFlightHtml =
+      '<div class="journey">\
+          NO RESULTS, TRY TO SEARCH AGAIN\
+      </div>';
+      $('#previousJourneys').append(sFlightHtml);
+    }
+  });
+
+  $('.toggleNav').on('click', function () {
+    $('nav ul').toggleClass('open');
+  });
+
+  //Get the parameter from the URL
+  function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+    }
+  }
 </script>
 
 </body>

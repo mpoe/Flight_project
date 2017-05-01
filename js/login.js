@@ -14,6 +14,7 @@ function fnCheckSession(){
         }
     });
     return checker;
+
 }
 
 function fnGetSessionData(){

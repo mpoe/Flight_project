@@ -10,43 +10,23 @@
         "sPassword": "123"
     },
     {
-        "sID": "3",
-        "sUsername": "localhost",
-        "sPassword": "123"
-    },
-    {
         "sID": "4",
-        "sUsername": "localhost",
-        "sPassword": "123"
+        "sUsername": "a",
+        "sPassword": "a"
     },
     {
         "sID": "5",
-        "sUsername": "localhost",
-        "sPassword": "123"
+        "sUsername": "a",
+        "sPassword": "a"
     },
     {
         "sID": "6",
-        "sUsername": "localhost",
-        "sPassword": "123"
+        "sUsername": "a",
+        "sPassword": "a"
     },
     {
         "sID": "7",
-        "sUsername": "localhost",
-        "sPassword": "123"
-    },
-    {
-        "sID": "8",
-        "sUsername": "localhost",
-        "sPassword": "123"
-    },
-    {
-        "sID": "9",
-        "sUsername": "test",
-        "sPassword": "test"
-    },
-    {
-        "sID": "10",
-        "sUsername": "gwwgwagwa",
-        "sPassword": "gwagggwagw"
+        "sUsername": "a",
+        "sPassword": "a"
     }
 ]
