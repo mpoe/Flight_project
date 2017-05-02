@@ -31,3 +31,10 @@ function fnLogout(){
     $.get("php/api-logout.php");
     jUserData = null;
 }
+
+$(document).on("click",".link", function(){
+      $(".wdw").hide();
+      var sWindowToShow = $(this).attr("data-go-to");
+      $("#"+sWindowToShow).show();
+});
+

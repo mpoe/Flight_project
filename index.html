@@ -10,20 +10,24 @@
 </head>
 <body>
 
+
 <wrapper class="wrapper">
+<div id="wdw-home" class="wdw"> 
     <header>
-        <a href="index.html" id="logo">
-            <img src="travelBirdsLogo.png" alt="Travel Birds logo">
-        </a>
+    <a class="link" data-go-to="wdw-home" id="logo">
+        <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+    </a>
         <nav>
             <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
             <div id="navitems">
                 <ul>
-                        <a href="findFlight.html">Flights</a>
-                        <a href="#">Hotel</a>
-                        <a href="#">Car Rental</a>
-                        <a id="faGlobe" href="#">Language</a>
-                        <a href="login.html">Login</a>
+                                
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
                 </ul>
             </div>
         </nav>
@@ -51,11 +55,602 @@
             </section>
         </div>
     </div>
+</div>
 </wrapper>
+
+
+<wrapper class="wrapper">
+<div id="wdw-findFlight" class="wdw"> 
+    <header>
+        <a class="link" data-go-to="wdw-home" id="logo">
+            <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+        </a>
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div id="navitems">
+                <ul>
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="flightFinder">
+                <h1>Find flights</h1>
+                <!--action="flightResults.html"-->
+            <form  class="flex-form" method="get" >
+
+                <input id="from" type="search" value="Copenhagen" name="from" placeholder="From">
+
+                <i class="fa fa-exchange" aria-hidden="true"></i>
+
+                <input id="to" type="search" value="London" name="to" placeholder="To">
+
+                <div class="dates">
+
+                    <input id="date1" type="date" name="date-from">
+
+                    <input id="date2" type="date" name="date-to">
+
+                </div>
+
+
+                <select>
+                    <option value="1 passanger">1 passenger</option>
+                    <option value="2 passanger">2 passengers</option>
+                    <option value="3 passanger">3 passengers</option>
+                    <option value="4 passanger">4 passengers</option>
+                    <option value="5 passanger">5 passengers</option>
+                    <option value="6 passanger">6 passengers</option>
+                    <option value="7 passanger">7 passengers</option>
+                    <option value="8 passanger">8 passengers</option>
+                </select>
+
+
+                <a id="linkAroundSubmit" class="link" data-go-to="wdw-flightResults" > <input id= "submit" type="submit" value="Search"></a>
+
+            </form>
+
+            <form class="checkbox">
+                <div id="round_trip"><input type="radio" name="radiobtn" value="Round Trip">Round Trip</div>
+                <div id="one_way"><input type="radio" name="radiobtn" value="One Way">One Way</div>
+                <div id="multi_city"><input type="radio" name="radiobtn" value="Multi-City">Multy-City</div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+</wrapper>
+
+
+
+<wrapper class="wrapper">
+<div id="wdw-signup" class="wdw"> 
+    <header>
+        <a class="link" data-go-to="wdw-home" id="logo">
+            <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+        </a>
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div id="navitems">
+                <ul>
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="loginForm">
+
+            <div class="log-form">
+                <h1>Sign up for an account</h1>
+                <form id="frm-signup" action="#">
+                    <input id="lbl-signUp-username" type="text" title="username" placeholder="username" />
+                    <input id="lbl-signUp-password" type="password" title="password" placeholder="password" />
+                    <!--<input id="lbl-signUp-email" type="email" title="Email" placeholder="Email" />-->
+                    <button id="btn-signUp" type="submit" class="btn" value="signUp" >Sign Up</button>
+                </form>
+            </div><!--end log form -->
+
+
+        </div>
+    </div>
+</div>
+</wrapper>
+
+
+<wrapper class="wrapper">
+<div id="wdw-previousJourney" class="wdw"> 
+    <header>
+        <a class="link" data-go-to="wdw-home" id="logo">
+            <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+        </a>
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div id="navitems">
+                <ul>
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+     <div id="container">
+            <div id="previousJourneys">
+
+   
+            <div class="secHeader">
+                <h1>Previous Journeys</h1>
+                <div class="button return"><a class="link" data-go-to="wdw-findFlight" id="adminNewFlight">New flight</a></div>
+            </div>
+
+                <div class="journey">
+                    <div class="departure">
+                        Departure<br>
+                        CPH - Copenhagen<br>
+                        TUE 31 Mar<br>
+                        12:30
+                    </div>
+                    <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
+                    <div class="arrival">
+                        Arrival<br>
+                        HEL - Helsinki<br>
+                        WED 1 Mar<br>
+                        15:50
+                    </div>
+                    <a href="#" class="button yellow">Change my Preferences</a>
+                    <a href="#" class="button yellow">Change my Flight details</a>
+                    <a class="button pink link" data-go-to="wdw-payment" id="btnBook">Book</a>
+                </div>
+                <div class="journey">
+                    <div class="departure">
+                        Departure<br>
+                        HEL - Helsinki<br>
+                        MON 6 Mar<br>
+                        15:35
+                    </div>
+                    <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
+                    <div class="arrival">
+                        Arrival<br>
+                        CPH - Copenhagen<br>
+                        MON 6 Mar<br>
+                        16:10
+                    </div>
+                    <a href="#" class="button yellow">Change my Preferences</a>
+                    <a href="#" class="button yellow">Change my Flight details</a>
+                    <a class="button pink link" data-go-to="wdw-payment" id="btnBook">Book</a>
+                </div>
+                <div class="journey">
+                    <div class="departure">
+                        Departure<br>
+                        CPH - Copenhagen<br>
+                        SUN 19 Feb<br>
+                        8:15
+                    </div>
+                    <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
+                    <div class="arrival">
+                        Arrival<br>
+                        LTN - London<br>
+                        SUN 19 Feb<br>
+                        11:30
+                    </div>
+                    <a href="#" class="button yellow">Change my Preferences</a>
+                    <a href="#" class="button yellow">Change my Flight details</a>
+                    <a class="button pink link" data-go-to="wdw-payment" id="btnBook">Book</a>
+                </div>
+                <div class="journey">
+                    <div class="departure">
+                        Departure<br>
+                        LTN - London<br>
+                        MON 20 Feb<br>
+                        20:40
+                    </div>
+                    <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
+                    <div class="arrival">
+                        Arrival<br>
+                        CPH - Copenhagen<br>
+                        MON 20 Feb<br>
+                        21:35
+                    </div>
+                    <a href="#" class="button yellow">Change my Preferences</a>
+                    <a href="#" class="button yellow">Change my Flight details</a>
+                    <a class="button pink link" data-go-to="wdw-payment" id="btnBook">Book</a>
+                </div>
+                <div class="journey">
+                    <div class="departure">
+                        Departure<br>
+                        CPH - Copenhagen<br>
+                        WED 1 Mar<br>
+                        13:15
+                    </div>
+                    <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
+                    <div class="arrival">
+                        Arrival<br>
+                        HEL - Helsinki<br>
+                        WED 1 Mar<br>
+                        15:50
+                    </div>
+                    <a href="#" class="button yellow">Change my Preferences</a>
+                    <a href="#" class="button yellow">Change my Flight details</a>
+                    <a class="button pink link" data-go-to="wdw-payment" id="btnBook">Book</a>
+                </div>
+                <div class="journey">
+                    <div class="departure">
+                        Departure<br>
+                        HEL - Helsinki<br>
+                        MON 6 Mar<br>
+                        15:35
+                    </div>
+                    <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
+                    <div class="arrival">
+                        Arrival<br>
+                        CPH - Copenhagen<br>
+                        MON 6 Mar<br>
+                        16:10
+                    </div>
+                    <a href="#" class="button yellow">Change my Preferences</a>
+                    <a href="#" class="button yellow">Change my Flight details</a>
+                    <a class="button pink link" data-go-to="wdw-payment" id="btnBook">Book</a>
+                </div>
+                <div class="journey">
+                    <div class="departure">
+                        Departure<br>
+                        CPH - Copenhagen<br>
+                        SUN 19 Feb<br>
+                        8:15
+                    </div>
+                    <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
+                    <div class="arrival">
+                        Arrival<br>
+                        LTN - London<br>
+                        SUN 19 Feb<br>
+                        11:30
+                    </div>
+                    <a href="#" class="button yellow">Change my Preferences</a>
+                    <a href="#" class="button yellow">Change my Flight details</a>
+                    <a class="button pink link" data-go-to="wdw-payment" id="btnBook">Book</a>
+                </div>
+                <div class="journey">
+                    <div class="departure">
+                        Departure<br>
+                        LTN - London<br>
+                        MON 20 Feb<br>
+                        20:40
+                    </div>
+                    <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>
+                    <div class="arrival">
+                        Arrival<br>
+                        CPH - Copenhagen<br>
+                        MON 20 Feb<br>
+                        21:35
+                    </div>
+                    <a href="#" class="button yellow">Change my Preferences</a>
+                    <a href="#" class="button yellow">Change my Flight details</a>
+                    <a class="button pink link" data-go-to="wdw-payment" id="btnBook">Book</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</wrapper>
+
+ <wrapper class="wrapper">
+  <div id="wdw-payment" class="wdw"> 
+    <header>
+    <a class="link" data-go-to="wdw-home" id="logo">
+        <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+    </a>
+      <nav>
+        <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <div id="navitems">
+          <ul>
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Booking Confirmation</h2>
+      </div>
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+
+    <div id="container">
+      <div id="payment">
+        <h1>Payment</h1>
+        <div class="information">
+          <div class="personal-information">
+            <h2>Personal information</h2>
+            <div class="form-element">
+              <label>Firstname</label>
+              <input type="text" placeholder="Firstname" id="txtFirstname">
+            </div>
+            <div class="form-element">
+              <label>Lastname</label>
+              <input type="text" placeholder="Lastname" id="txtLastname">
+            </div>
+            <div class="form-element">
+              <label>Address</label>
+              <input type="text" placeholder="Address" id="txtAddress">
+            </div>
+            <div class="form-element">
+              <label>ZIP</label>
+              <input type="text" placeholder="ZIP" id="txtZip">
+            </div>
+            <div class="form-element">
+              <label>City</label>
+              <input type="text" placeholder="City" id="txtCity">
+            </div>
+            <div class="form-element">
+              <label>Passport no.</label>
+              <input type="text" placeholder="Passport no." id="txtPassport">
+            </div>
+          </div>
+          <div class="credit-card-information">
+            <h2>Credit card information</h2>
+            <div class="form-element">
+              <label>Credit Card Number</label>
+              <input type="text" placeholder="Credit card number">
+            </div>
+            <div class="form-element">
+              <label>Credit Card Expires</label>
+              <input type="text" placeholder="MM/YY">
+            </div>
+            <div class="form-element">
+              <label>Credit Card CVV</label>
+              <input type="text" placeholder="***">
+            </div>
+          </div>
+        </div>
+        <input type="submit" id="payment-submit" value="ORDER TRIP">
+      </div>
+    </div>
+  </div>
+  </wrapper>
+
+
+
+<wrapper class="wrapper">
+<div id="wdw-login" class="wdw"> 
+    <header>
+    <a class="link" data-go-to="wdw-home" id="logo">
+        <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+    </a>
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div id="navitems">
+                <ul>
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="loginForm">
+
+            <div class="log-form">
+                <h1>Login to your account</h1>
+                <p>Not a member? <a class="link" data-go-to="wdw-signup">Click here to create an account</a></p>
+                <form id="frm-login" action="#">
+                    <input id="lbl-login-username" type="text" title="username" placeholder="username" />
+                    <input id="lbl-login-password" type="password" title="password" placeholder="password" />
+                    <button id="btn-login" type="submit" class="btn" value="Login" >Login</button>
+                    <a class="forgot" href="#">Forgot Username?</a>
+                </form>
+            </div><!--end log form -->
+
+        </div>
+    </div>
+</div>
+</wrapper>
+
+
+<wrapper class="wrapper">
+<div id="wdw-flightResults" class="wdw"> 
+    <header>
+        <a class="link" data-go-to="wdw-home" id="logo">
+            <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+        </a>
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div id="navitems">
+                <ul>
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="previousJourneys">
+            <div class="secHeader">
+                <h1>Flight Results</h1>
+                <div class="button return"><a class="link" data-go-to="wdw-findFlight"> Search again</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</wrapper>
+
+
+<wrapper class="wrapper">
+<div id="wdw-booking" class="wdw"> 
+    <header>
+        <a class="link" data-go-to="wdw-home" id="logo">
+            <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+        </a>
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div id="navitems">
+                <ul>
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="previousJourneys">
+            <h1>Booking!</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</wrapper>
+
+
+<wrapper class="wrapper">
+<div id="wdw-admin" class="wdw"> 
+    <header>
+        <a class="link" data-go-to="wdw-home" id="logo">
+        <img src="travelBirdsLogo.png" alt="Travel Birds logo">
+        </a>
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <div id="navitems">
+                <ul>
+                           <a class="link" data-go-to="wdw-findFlight"> Flights</a>
+                           <a class="link" data-go-to="wdw-home"> Hotel</a>
+                           <a class="link" data-go-to="wdw-home"> Car Rental</a>
+                           <a class="link" data-go-to="wdw-home" id="faGlobe"> Language </a> 
+                           <a class="link" data-go-to="wdw-login"> Login</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container" class="admin">
+        <div class="adminPanel">
+            
+            
+            <h1>My Preferences</h1>
+            <ul id="list">
+                <li><a href="#">Edit my details</a></li>
+                <li><a href="#">Find a seat</a></li>
+                <li><a href="#">Pre-Purchase a meal</a></li>
+                <li><a href="#">Purchase extra bags</a></li>
+                <li><a href="#">View your itinerary</a></li>
+                <li><a href="#">Enter APIS infomation</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</wrapper>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/login.js"></script>
 <script>
+
+var sDeparture;
+var sArrival;
+
+$(document).on("click", "#btnBook", function(){
+
+sDeparture = $(this).siblings(".departure").text();
+sArrival = $(this).siblings(".arrival").text();
+
+})
+
+
+  //On button click (order), display the confirmation of the booking in a modal window.
+$(document).on("click", "#payment-submit", function(){ 
+
+   // modal.style.display = "block";
+    $("#myModal").css("display", "block");
+
+    var sFirstname = $("#txtFirstname").val();
+    var sLastname = $("#txtLastname").val();
+    var sAddress = $("#txtAddress").val();
+    var iZip = $("#txtZip").val();
+    var sCity = $("#txtCity").val();
+    var iPassportNumber = $("#txtPassport").val();
+
+    $(".modal-body").append('<p>Thank you for booking, we registered the following information about you:</p><br>');
+    $(".modal-body").append('<p>Firstname:  '+sFirstname+'</p>\
+                             <p>Lastname:  '+sLastname+'</p>\
+                             <p>Address:  '+sAddress+'</p>\
+                             <p>Zip code:  '+iZip+'</p>\
+                             <p>City:  '+sCity+'</p>\
+                             <p>Passport no:  '+iPassportNumber+'</p><br>\
+                             <p>'+sDeparture+'</p>\
+                             <p>'+sArrival+'</p>\
+                             ');
+
+});
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks on <span> (x), close the modal and empty it.
+span.onclick = function() {
+    modal.style.display = "none";
+    $(".modal-body").empty();
+}
+
+// When the user clicks anywhere outside of the modal, close it and empty it.
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        $(".modal-body").empty();
+    }
+}
+
 
     $(function() {
         $('.toggleNav').on('click', function () {
@@ -63,20 +658,140 @@
         })
     });
 
+
     $('#fpSec1').on("click", function() {
-            window.location.replace("findFlight.html")
+
+                  $(".wdw").hide();
+                  var sWindowToShow = "wdw-findFlight";
+                  $("#"+sWindowToShow).show();
         });
 
 
     $('#fpSec2').on("click", function() {
        if(fnCheckSession()) { //if its true.
-          window.location.replace("previousJourney.html")
+                  $(".wdw").hide();
+                  var sWindowToShow = "wdw-previousJourney";
+                  $("#"+sWindowToShow).show();
+
        }
        else { // otherwise go to login.
            console.log("here")
-           //window.location.replace("login.html");
+
+                  //$(".wdw").hide();
+                  //var sWindowToShow = "wdw-login";
+                 // $("#"+sWindowToShow).show();
     }
+
     });
+
+        $(document).on("submit", ".flex-form", function(e){
+            e.preventDefault();
+        });
+
+        $(document).on("submit", "#frm-signup", function(e){
+        e.preventDefault();
+        sUsername = $("#lbl-signUp-username").val();
+        sPassword = $("#lbl-signUp-password").val();
+        console.log(sUsername);
+        console.log(sPassword);
+
+        var sUrl = "php/api-create-user.php";
+
+        $.ajax({
+            "url":sUrl,
+            "method":"get",
+            "data":{"username":sUsername,"password":sPassword},
+            "cache":true,
+            //We expect json from ajax
+            "dataType":"json"
+        })
+    });
+
+ $(document).on("submit", "#frm-login", function(e){
+        e.preventDefault();
+        sUsername = $("#lbl-login-username").val();
+        sPassword = $("#lbl-login-password").val();
+        console.log(sUsername);
+        console.log(sPassword);
+
+        var sUrl = "php/api-login.php";
+
+        $.ajax({
+        "url":sUrl,
+        "method":"get",
+        "data":{"username":sUsername,"password":sPassword},
+        "cache":true,
+        //We expect json from ajax
+        "dataType":"json" 
+    })
+
+       // window.location.replace("admin.html");
+                  $(".wdw").hide();
+                  var sWindowToShow = "wdw-admin";
+                  $("#"+sWindowToShow).show();
+
+    });
+
+
+  //Get the JSON
+  $.get('json/flights.json', function(oData) {
+    //Search the array through for matches
+    $.each(oData.flights, function(index, oFlight){
+
+
+      if(oFlight.departure.includes(getUrlParameter('from')) || oFlight.arrival.includes(getUrlParameter('to'))) {
+        var sFlightHtml =
+        '<div class="journey">\
+            <div class="departure">\
+                Departure<br>\
+                ' +oFlight.departure+ '<br>\
+                ' +oFlight.departure_date+ '<br>\
+                ' +oFlight.departure_time+ '\
+            </div>\
+            <div class="flight-icon"><i class="fa fa-plane fa-3" aria-hidden="true"></i></div>\
+            <div class="arrival">\
+                Arrival<br>\
+                ' +oFlight.arrival+ '<br>\
+                ' +oFlight.arrival_date+ '<br>\
+                ' +oFlight.arrival_time+ '\
+            </div>\
+            <a class="button pink link" data-go-to="wdw-payment">Book</a>\
+        </div>';
+        $('#previousJourneys').append(sFlightHtml);
+      }
+
+
+    });
+
+    //If there is no journeys added, show "NO RESULTS"
+    if($('.journey').length < 1) {
+      var sFlightHtml =
+      '<div class="journey">\
+          NO RESULTS, TRY TO SEARCH AGAIN\
+      </div>';
+      $('#previousJourneys').append(sFlightHtml);
+    }
+  });
+
+  $('.toggleNav').on('click', function () {
+    $('nav ul').toggleClass('open');
+  });
+
+  //Get the parameter from the URL
+  function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+    }
+  }
 
 </script>
 
