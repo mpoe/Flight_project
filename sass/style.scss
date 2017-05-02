@@ -684,7 +684,6 @@ ul#list li {
 }
 /*end flight results*/
 
-
 /*Media queries */
 /*Mobile - Less than or equal to 270.*/
 @media only screen and (max-width: 440px) {
@@ -722,7 +721,6 @@ ul#list li {
     margin-bottom:0;
   }
 
-
   /*previous journey*/
   .journey {
     flex-wrap: wrap;
@@ -732,8 +730,6 @@ ul#list li {
     align-items: center;
   }
   /*Previous journey*/
-
-
 }
 
 
@@ -792,7 +788,6 @@ ul#list li {
     width:20em;
   }
 
-
   /*admin */
   .adminPanel {
     width: 80%;
@@ -820,7 +815,6 @@ ul#list li {
   }
   /*Previous journey*/
 
-
   /*payment page */
   #payment {
     width: 80%;
@@ -833,14 +827,12 @@ ul#list li {
   .personal-information, .credit-card-information {
     width: 100%;
   }
-
   /*end payment page */
 }
 
 /* less than/equal to 1024 and greater than 640*/
 @media only screen and (max-width: 1024px) and (min-width: 640px) {
-
-
+  
   section {
     width: 100%;
   }
@@ -858,7 +850,4 @@ ul#list li {
     display: none;
   }
   /*end nav menu */
-
-
-
 }
