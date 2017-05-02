@@ -650,10 +650,10 @@ window.onclick = function(event) {
     }
 }
 
-
+    /*responsive menu */
     $(function() {
         $('.toggleNav').on('click', function () {
-            $('nav ul').toggleClass('open'); /*only when its enabled will this class apply - enabled = clicked*/
+            $('nav ul').addclass("open"); /*only when its enabled will this class apply - enabled = clicked*/
         })
     });
 

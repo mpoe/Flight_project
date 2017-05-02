@@ -60,6 +60,10 @@ header {
 a.toggleNav {
   display: none; }
 
+/* fixes bug in mobile nav where you'd see 4 bars not 3 */
+i.fa.fa-bars {
+  height: 0.85em; }
+
 nav {
   display: flex;
   align-items: center;
@@ -598,6 +602,12 @@ ul#list li {
 /*Media queries */
 /*Mobile - Less than or equal to 270.*/
 @media only screen and (max-width: 440px) {
+  * {
+    overflow: auto; }
+
+  .wrapper {
+    overflow: scroll !important; }
+
   header {
     display: flex;
     justify-content: center;
@@ -625,12 +635,20 @@ ul#list li {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center; }
+    .journey .modal-content {
+      width: 100%; }
 
   /*Previous journey*/ }
 /*Mobile - Less than or equal to 640.*/
 @media only screen and (max-width: 640px) {
+  * {
+    overflow: auto; }
+
+  .wrapper {
+    overflow: scroll !important; }
+
   h1 {
-    font-size: 1.5em; }
+    font-size: 2em; }
 
   section {
     width: 100%; }
