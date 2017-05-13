@@ -662,11 +662,10 @@ $('#fpSec2').on("click", function() {
     else { // otherwise go to login.
         console.log("here")
 
-              //$(".wdw").hide();
-              //var sWindowToShow = "wdw-login";
-             // $("#"+sWindowToShow).show();
-    }
-
+              $(".wdw").hide();
+              var sWindowToShow = "wdw-login";
+             $("#"+sWindowToShow).show();
+        }
     });
 
         $(document).on("submit", ".flex-form", function(e){
